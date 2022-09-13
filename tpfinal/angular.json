@@ -90,9 +90,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "tpfinal/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "tpfinal/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         }
       }
