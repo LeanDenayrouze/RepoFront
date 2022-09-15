@@ -1,0 +1,13 @@
+.row{
+    padding: 10px;
+}
+
+/*estilo acerca de mi*/
+div{
+    background-color: #8dc2ff;
+    text-align: center;
+    align-items: center;
+}
+#nombre{
+    font-weight: bold;
+}
