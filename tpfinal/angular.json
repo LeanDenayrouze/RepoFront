@@ -91,10 +91,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "tpfinal/node_modules/bootstrap/dist/css/bootstrap.css"
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
-              "tpfinal/node_modules/bootstrap/dist/js/bootstrap.js"
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           }
         }
