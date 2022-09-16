@@ -4,12 +4,37 @@
 
 /*estilo mifoto de perfil*/
 
+#mifoto{
+        
+    width: 30%;
+    border-radius: 20%;
+    box-shadow: 5px 5px 10px black; 
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 576px){ 
 #mifoto{
+    position:absolute;
+    width: 20%;
     border-radius: 20%;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px black; 
+    left: 30px;
+    top: 350px;
 }
 }
+
+
+@media (min-width:770px){ 
+    #mifoto{
+        position: absolute;
+        width: 12%;
+        border-radius: 20%;
+        box-shadow: 5px 5px 10px black; 
+        left: 30px;
+        top: 550px
+    }
+    }
 
 /*estilo acerca de mi*/
 div{
