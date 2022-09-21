@@ -1,8 +1,12 @@
 .row{
     background-color: #a7cefa;
+    padding: 20px;
+    
 }
 h2{
-    padding-left: 50px;
+    
+    padding-top: 10px;
+    padding-left: 40px;
     padding-bottom: 20px;
 }
 
