@@ -1,0 +1,11 @@
+.row{
+    background-color: #b9daff ;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 1px 1px 1px #666666;
+    font-size: 15px;
+    color: #b0b0b0;
+}

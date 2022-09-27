@@ -16,3 +16,6 @@ p{
 .texto, .foto{
     display: inline-block;
 }
+.foto{
+    box-shadow: 5px 5px 5px #676767;
+}
