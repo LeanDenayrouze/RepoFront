@@ -13,13 +13,18 @@ ul{
     padding: 10px;
 }
 #logoescuela{
-    
-    padding-top: 20px;
-    height: 70px;
+    padding-left: 20px;
+    padding-top: 30px;
+    height: 90px;
     width: auto;
 }
 #logoUNLP{
-    
+    padding-left: 10px;
     height: 70px;
+    width: auto;
+}
+
+#logoAP{
+    height: 100px;
     width: auto;
 }
