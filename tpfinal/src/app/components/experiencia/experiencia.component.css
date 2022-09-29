@@ -1,6 +1,6 @@
 .row{
     padding: 20px;
-    background-color: #7dbaff ;
+    background-color: #7dbaff;
 }
 h2{
     padding-left: 40px;
@@ -11,4 +11,11 @@ h3, h5{
 }
 ul{
     padding: 10px;
+}
+@media (max-width: 915px){
+    .row{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
