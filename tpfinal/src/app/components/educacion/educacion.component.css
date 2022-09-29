@@ -12,14 +12,13 @@ h3, h5{
 ul{
     padding: 10px;
 }
-#logoescuela{
-    padding-left: 15px;
-    padding-top: 30px;
-    height: 90px;
+#logoEscuela{
+ 
+    height: 70px;
     width: auto;
 }
 #logoUNLP{
-    padding-left: 15px;
+ 
     height: 70px;
     width: auto;
 }
