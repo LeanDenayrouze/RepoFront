@@ -12,10 +12,13 @@ h3, h5{
 ul{
     padding: 10px;
 }
-@media (max-width: 915px){
-    .row{
+@media (max-width: 916px){
+    .row, .container{
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+    h2{
+        padding: 0px;
     }
 }

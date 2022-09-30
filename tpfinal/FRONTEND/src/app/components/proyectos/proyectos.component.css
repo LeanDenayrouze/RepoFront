@@ -20,3 +20,13 @@ p{
 .foto{
     box-shadow: 5px 5px 5px #676767;
 }
+
+@media (max-width: 916px) {
+    .div{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+    }
+ }
