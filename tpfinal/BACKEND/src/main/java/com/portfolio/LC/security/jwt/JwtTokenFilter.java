@@ -17,6 +17,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 public class JwtTokenFilter extends OncePerRequestFilter {
 
+    //prueba modificacion temporal JwtTokenFilter.class
     private final static Logger logger = LoggerFactory.getLogger(JwtProvider.class);
 
     @Autowired
@@ -40,13 +41,13 @@ public class JwtTokenFilter extends OncePerRequestFilter {
         } catch (Exception e) {
             logger.error("Falló el metodo doFilterInternal");
         }
-        filterChain.doFilter(request, response);
+        filterChain.doFilter(request,response);
     }
     
     private String  getToken(HttpServletRequest request){
         String header = request.getHeader("Authorization");
         if (header != null && header.startsWith("Bearer"))
-            return header.replace("Bearer", "");
+            return header.replace("Bearer","");
         return null;
     }
 }
