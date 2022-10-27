@@ -1,49 +1,30 @@
 <div class="row">
-    <h2>Educación</h2>
-    <div class="row">
-    <div class="col-2">
-    <img src="../../../assets/escuela.png"  id="logoEscuela">
+    <h2>Educacion</h2>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+           Agregar Educacion
+        </button>
     </div>
-    <div class="col-8">
-        <ul>
-            <li>
-                <h3>Secundario</h3>
-                <h5> 3 años</h5>
-            </li>
-            <p>Estudios Secundarios completos realizados en la Escuela de Educación Tecnica Nro 8 ‘Juan Bautista Alberdi’ dependiente de la Universidad Tecnologica Nacional, de La Plata.
-            Titulo de Tecnico Electromecanico.
-            </p>
-        </ul>
-    </div>    
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h4>{{Educacion.nombreE}}</h4>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn" routerLink="/editedu/{{Educacion.id}}">
+                            Editar <i class="bi bi-pencil-square"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn" (click)="delete(Educacion.id)">
+                            Borrar <i class="bi bi-trash3"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="row">
-        <div class="col-2">
-        <img src="../../../assets/unlp.png" id="logoUNLP">
-        </div>    
-        <div class="col-8">
-            <ul>
-                <li>
-                <h3>Universitario</h3>
-                <h5> 3 años (inconcluso)</h5>
-                </li>
-                <p>Estudios Universitarios en la Universidad Nacional de La Plata, Facultad de Ingeniería, Departamento de Mecánica.
-             </p>
-            </ul>
-        </div>
-    <div class="row">
-        <div class="col-2">
-            <img src="../../../assets/APLogo.png" id="logoAP">
-        </div>
-        <div class="col-8">
-            <ul>
-            <li>
-                <h3>Curso</h3>
-                <h5> 9 meses (en proceso)</h5>
-            </li>
-            <p>Programa impulsado por el Ministerio de Economía de la Nación, que tiene como objetivo capacitar a personas en lenguajes y conocimientos sobre programación, testing y habilidades digitales para potenciar la empleabilidad en el sector del software y la tecnología. Certificado: Programador web full-stack junior.
-            </p>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
