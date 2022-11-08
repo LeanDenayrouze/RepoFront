@@ -25,14 +25,18 @@ public class Persona {
     @NotNull
     private String descripcion;
     
+    @NotNull
+    private String titulo;
+    
     private String img;      
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
+    public Persona(String nombre, String apellido, String titulo, String descripcion, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
+        this.titulo = titulo;
         this.descripcion = descripcion;
         this.img = img;
     }
@@ -61,6 +65,14 @@ public class Persona {
         this.apellido = apellido;
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+    
     public String getDescripcion() {
         return descripcion;
     }
