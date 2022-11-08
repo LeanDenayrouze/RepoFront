@@ -44,7 +44,7 @@ public class dtoPersona {
     }
     
     public String getTitulo() {
-        return nombre;
+        return titulo;
     }
 
     public void setTitulo(String titulo) {
