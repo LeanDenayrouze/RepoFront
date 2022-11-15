@@ -1,21 +1,30 @@
 <div class="row">
     <h2>Proyectos</h2>
-    <div class="container">
-        <div class="col-sm-12 col-md-9 col-lg-7 texto">
-        <h3>Página Web</h3>
-        <p>Desafío del módulo 3 de la segunda etapa (Yo Programo) del curso "Argentina Programa"</p>
-        </div>
-        <div class="col-sm-12 col-lg-3 offset-md-2 offset-lg-2 foto">
-        <img src="../../../assets/pag web.png" class="img-fluid">
-        </div>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">
+            Nuevo proyecto
+        </button>
     </div>
-    <div class="container">
-        <div class="col-sm-12 col-md-9 col-lg-7 texto">
-        <h3>Portfolio</h3>
-        <p>Trabajo práctico integrador para la aprobación y finalización del curso "Argentina Programa", consistente en una aplicación web full stack </p>
-        </div>
-        <div class="col-sm-12 col-lg-3 offset-md-2 offset-lg-2 foto">
-        <img src="../../../assets/Portfolio.png" class="img-fluid">
-        </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyectos of proyectos">
+                    <td>
+                        <h4>{{Proyectos.nombre}}</h4>
+                    </td>
+                    <td>{{Proyectos.descripcion}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn" routerLink="/editproyecto/{{Proyectos.id}}">
+                            Editar <i class="bi bi-pencil-square"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn" (click)="delete(Proyectos.id)">
+                            Borrar <i class="bi bi-trash3"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-</div>
