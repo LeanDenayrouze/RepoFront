@@ -1,4 +1,3 @@
-
 package com.portfolio.LC.Controller;
 
 import com.portfolio.LC.Dto.dtoProyectos;
@@ -24,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/proyectos")
 @CrossOrigin(origins = "https://frontendlean.web.app")
 public class CProyectos {
+    
     @Autowired
     SProyectos sProyectos;
     
@@ -38,6 +38,7 @@ public class CProyectos {
         if(!sProyectos.existsById(id)){
             return new  ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
         }
+        
         Proyectos proyectos = sProyectos.getOne(id).get();
         return new ResponseEntity(proyectos, HttpStatus.OK);
     }

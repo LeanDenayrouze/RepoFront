@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 @Service
 @Transactional
 public class SProyectos {
-
     @Autowired
     RProyectos rProyectos;
 
@@ -24,7 +23,7 @@ public class SProyectos {
     }
 
     public Optional<Proyectos> getByNombre(String nombre) {
-        return rProyectos.findbyNombre(nombre);
+        return rProyectos.findByNombre(nombre);
     }
     
     public void save(Proyectos proyectos){

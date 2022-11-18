@@ -16,7 +16,7 @@ export class ProyectosComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.cargarProyectos;
+    this.cargarProyectos();
     if(this.tokenService.getToken()){
       this.isLogged = true;
     }else{
