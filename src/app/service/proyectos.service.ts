@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class ProyectosService {
-  URL = 'https://backendlean.herokuapp.com/proyectos/';
+  URL = 'https://repoback-production.up.railway.app/proyectos/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyectos[]>{

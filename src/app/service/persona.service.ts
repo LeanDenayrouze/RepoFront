@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://backendlean.herokuapp.com/personas/';
+  URL = 'https://repoback-production.up.railway.app/personas/';
 
   constructor(private httpClient: HttpClient) { }
 
